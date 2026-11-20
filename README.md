@@ -2,7 +2,8 @@
 
 Sözde yapay zekaların, sözde kod basei okudum şu şu şu bu bu bu laflarını, deterministik olarak %100 ezen ve gerçekten kod basei %100 okumaya redakte eden hardcoded betik suite'i.
 
-**AB = aptalbotlar.** Artık hepsine AI yerine AB diyoruz.
+ab= aptalbotlar
+aiların tamamına artık ai yerine ab diyoruz, çünkü abler.
 
 ## Kur
 
