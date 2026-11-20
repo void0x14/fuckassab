@@ -1,19 +1,14 @@
-# Sıralı Okuma
+# fuckassab
 
-**“Kod tabanının tamamını okudum.” Hangi dosyanın hangi baytını? Fişini göster.**
-
-- OpenCode eklentisi kaynağın sabit bir kopyasını alır. Her ajana kendi okuma penceresini verir.
-- Betikler dosya özetini (SHA-256), bayt aralığını, araç fişini ve ajan yanıtını karşılaştırır.
-- Aralık eksikse, fiş uyuşmuyorsa veya yanıt yarım kaldıysa sonuç **tam** değildir.
-- **%100**, kaynak baytlarının kapsanmasıdır. Kodun anlaşıldığını ölçmez. İkili, dışlanmış veya okunamayan dosya varsa tüm ağaç için tam kapsam verilmez.
+Sözde yapay zekaların, sözde kod basei okudum şu şu şu bu bu bu laflarını, deterministik olarak %100 ezen ve gerçekten kod basei %100 okumaya redakte eden hardcoded betik suite'i.
 
 ## Kur
 
 Linux, Python 3, Bun ve eklentinin kullandığı `command.transform` / `session.hook` arayüzlerini sunan bir OpenCode kurulumu gerekir. Her OpenCode sürümüyle uyum iddiası yoktur.
 
 ```sh
-git clone https://github.com/void0x14/sirali-okuma.git
-cd sirali-okuma
+git clone https://github.com/void0x14/fuckassab.git
+cd fuckassab
 python3 kur.py
 export OPENCODE_SOURCE=/tam/yol/opencode-kaynak-agaci
 ```
