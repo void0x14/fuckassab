@@ -331,9 +331,9 @@ class Denetimler(unittest.TestCase):
         finally:
             for alan in alanlar:shutil.rmtree(alan)
     def sinama_ortak_dosyaya_yazma_teknik_olarak_engellenir(kendisi):
-        ortak=str(Path(sys.executable).resolve())
-        kod='import os,errno;\ntry: os.close(os.open('+repr(ortak)+',os.O_WRONLY)); raise SystemExit(4)\nexcept OSError as hata: assert hata.errno==errno.EROFS; print("engellendi")'
-        sonuc=subprocess.run(calisma_ortami.salt_okunur_komut(kendisi.alan,[sys.executable,'-B','-c',kod]),capture_output=True,text=True)
+        with tempfile.NamedTemporaryFile(dir=Path.home()) as ortak:
+            kod='import os,errno;\ntry: os.close(os.open('+repr(ortak.name)+',os.O_WRONLY)); raise SystemExit(4)\nexcept OSError as hata: assert hata.errno==errno.EROFS; print("engellendi")'
+            sonuc=subprocess.run(calisma_ortami.salt_okunur_komut(kendisi.alan,[sys.executable,'-B','-c',kod]),capture_output=True,text=True)
         kendisi.assertEqual(sonuc.returncode,0,sonuc.stderr);kendisi.assertEqual(sonuc.stdout.strip(),'engellendi')
 
 def ana():
