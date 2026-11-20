@@ -1,0 +1,18 @@
+# Sadece dağıtılan kaynakları izle. Yerel taramalar okunan kodun kopyasını içerir.
+/*
+!/.gitignore
+!/README.md
+!/DURUM.md
+!/kur.py
+!/denetleyici/
+/denetleyici/*
+!/denetleyici/ajanli_okuma.py
+!/denetleyici/calisma_ortami.py
+!/denetleyici/kanit_denetimi.py
+!/denetleyici/oturum_raporu.py
+!/denetleyici/ozdenetim.py
+!/denetleyici/uygulama.py
+!/denetleyici/yerel_baglanti.js
+!/denetleyici/yerel_kopru.py
+!/denetleyici/yerlesik_sayim.js
+!/denetleyici/yerlesik_sayim.py
